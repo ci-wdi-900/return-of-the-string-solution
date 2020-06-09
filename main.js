@@ -1,32 +1,32 @@
-function capitalize(str) {
-  return str.toUpperCase();
-}
-
-function exclaim(str) {
+function yell(str) {
   return str + '!';
 }
 
-function firstCharacter(str) {
+function getFirstCharacter(str) {
   return str[0];
 }
 
-function lastCharacter(str) {
+function getLastCharacter(str) {
   return str[str.length - 1];
 }
 
-function oneCharacter(str, i) {
+function getOneCharacter(str, i) {
   return str[i];
 }
 
-function twoCharacters(str, i1, i2) {
+function getTwoCharacters(str, i1, i2) {
   return str[i1] + str[i2];
 }
 
-function yeller(str) {
+function makeCapitalized(str) {
+  return str.toUpperCase();
+}
+
+function yellLouder(str) {
   return str.toUpperCase() + '!!!'
 }
 
-function initials(str) {
+function getInitials(str) {
   return str[0] + '.' + str[str.indexOf(' ') + 1] + '.';
 }
 
@@ -35,46 +35,46 @@ function initials(str) {
  * THIS CODE IS FOR INTERNAL USE ONLY. DON'T CHANGE ANYTHING BELOW! *
  ********************************************************************/
 
-if (typeof capitalize === 'undefined') {
-  capitalize = undefined;
-}
-
 if (typeof exclaim === 'undefined') {
   exclaim = undefined;
 }
 
-if (typeof firstCharacter === 'undefined') {
-  firstCharacter = undefined;
+if (typeof getFirstCharacter === 'undefined') {
+  getFirstCharacter = undefined;
 }
 
-if (typeof lastCharacter === 'undefined') {
-  lastCharacter = undefined;
+if (typeof getLastCharacter === 'undefined') {
+  getLastCharacter = undefined;
 }
 
-if (typeof oneCharacter === 'undefined') {
-  oneCharacter = undefined;
+if (typeof getOneCharacter === 'undefined') {
+  getOneCharacter = undefined;
 }
 
-if (typeof twoCharacters === 'undefined') {
-  twoCharacters = undefined;
+if (typeof getTwoCharacters === 'undefined') {
+  getTwoCharacters = undefined;
 }
 
-if (typeof initials === 'undefined') {
-  initials = undefined;
+if (typeof makeCapitalized === 'undefined') {
+  makeCapitalized = undefined;
 }
 
-if (typeof yeller === 'undefined') {
-  yeller = undefined;
+if (typeof yellLouder === 'undefined') {
+  yellLouder = undefined;
+}
+
+if (typeof getInitials === 'undefined') {
+  getInitials = undefined;
 }
 
 
 module.exports = {
-  capitalize,
-  exclaim,
-  firstCharacter,
-  lastCharacter,
-  oneCharacter,
-  twoCharacters,
-  initials,
-  yeller,
+  yell,
+  getFirstCharacter,
+  getLastCharacter,
+  getOneCharacter,
+  getTwoCharacters,
+  makeCapitalized,
+  yellLouder,
+  getInitials,
 };
